@@ -1,0 +1,110 @@
+$font: 'Roboto';
+%image{
+    height: auto;
+    width: 70%;
+    margin-left: 20%;
+    border: 2px solid gray;
+}
+#resources li{
+    margin-bottom: 3%;
+}
+
+p, li{
+    font-size: 1.2rem;
+}
+.button {
+    background-color: aliceblue; /* Green */
+    border: 2px solid rgb(47, 117, 221);
+    color: rgb(47, 117, 221);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button:hover{
+    background-color: rgb(139, 195, 243); /* Green */
+    color: rgb(0, 102, 255);
+
+  }
+  .buttonDiv{
+      padding-top: 5%;
+      margin: auto;
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+  }
+
+#contact{
+    margin-top: 8%;
+    text-align: center;
+}
+body{
+    font-family: $font;
+}
+.button a{
+    text-decoration: none;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #bdbdbd;
+    text-align: left;
+    padding: 4px;
+    text-align: center;
+
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    text-align: center;
+
+  }
+
+.title{
+    text-align:center;
+    margin-top:3%
+}
+.top{
+    margin-bottom: 4%;
+}
+.nav{
+    background-color:aliceblue;
+    justify-content: space-evenly;
+}
+.nav {
+    a{
+    color: rgb(0, 80, 146);
+    }
+    a:hover{
+        color: rgb(0, 50, 92);
+        text-decoration: underline;
+    }
+}
+ 
+
+#pb{
+  @extend %image 
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(107, 186, 255);
+    padding:0.7%;
+    color: white;
+    text-align: center;
+  }
+  @media only screen and (max-width: 600px) {
+    #pb{
+        width: 50%;
+        height: auto;
+        border: 2px solid gray;
+    }
+  }
